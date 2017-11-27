@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>fullcalendar-scheduler</artifactId>
-    <version>1.9.0-SNAPSHOT</version>
+    <version>1.9.0</version>
     <name>FullCalendar Scheduler</name>
     <description>WebJar for FullCalendar Scheduler</description>
     <url>http://webjars.org</url>
@@ -49,7 +49,7 @@
         <url>http://github.com/webjars/fullcalendar-scheduler</url>
         <connection>scm:git:https://github.com/webjars/fullcalendar-scheduler.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/fullcalendar-scheduler.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>fullcalendar-scheduler-1.9.0</tag>
     </scm>
     
     <build>
@@ -78,13 +78,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/dist"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/dist" />
                                 </move>
                             </target>
                         </configuration>
