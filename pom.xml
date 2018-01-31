@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>fullcalendar-scheduler</artifactId>
-    <version>1.9.2-SNAPSHOT</version>
+    <version>1.9.2</version>
     <name>FullCalendar Scheduler</name>
     <description>WebJar for FullCalendar Scheduler</description>
     <url>http://webjars.org</url>
@@ -49,7 +49,7 @@
         <url>http://github.com/webjars/fullcalendar-scheduler</url>
         <connection>scm:git:https://github.com/webjars/fullcalendar-scheduler.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/fullcalendar-scheduler.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>fullcalendar-scheduler-1.9.2</tag>
     </scm>
     
     <build>
